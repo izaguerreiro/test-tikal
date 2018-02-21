@@ -7,6 +7,11 @@ Desafio realizado para a vaga de Desenvolvedor Python.
 * Instale o rabbitmq-server
 * Execute o rabbitmq-server
 
+```
+sudo apt-get install rabbitmq-server
+sudo rabbitmq-server deattach
+```
+
 * Em outro terminal
 * Faça download ou clone o repositório
 * Acesse a pasta do projeto
@@ -14,16 +19,6 @@ Desafio realizado para a vaga de Desenvolvedor Python.
 * Instale as dependências
 * Execute os testes
 * Execute o celery
-
-* Abra outro terminal
-* Acesse a pasta do projeto
-* Ative o virtualenv
-* Execute o projeto
-
-```
-sudo apt-get install rabbitmq-server
-sudo rabbitmq-server deattach
-```
 
 ```
 git clone git@bitbucket.org:izaguerreiro/test-tikal.git
@@ -36,6 +31,11 @@ sudo apt-get install rabbitmq-server
 celery 
 celery --app=celerytest worker --beat --loglevel=info
 ```
+
+* Abra outro terminal
+* Acesse a pasta do projeto
+* Ative o virtualenv
+* Execute o projeto
 
 ```
 cd test-tikal
