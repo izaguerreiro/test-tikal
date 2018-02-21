@@ -1,7 +1,0 @@
-.venv/
-*.sqlite3
-.pyc
-*.pyc
-__pycache__/
-staticfiles
-.vscode/
