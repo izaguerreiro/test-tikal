@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from core.views import list_process
+from core.views import list_process, ProcessView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api-auth/', include('rest_framework.urls')),
+    #path('api-auth/', include('rest_framework.urls')),
+    path('api/process/', ProcessView.as_view(), name='process'),
+    path('api/process/<int:pk>/', ProcessView.as_view(), name='process-delete'),
     path('processes/<slug:customer>/', list_process, name='customer-process')
 ]
