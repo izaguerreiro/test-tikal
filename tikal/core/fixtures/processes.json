@@ -1,0 +1,19 @@
+[{
+        "model": "core.process",
+        "pk": 1,
+        "fields": {
+            "process_number": 123456,
+            "process_data": "Processo de teste",
+            "customer": 1
+        }
+    },
+    {
+        "model": "core.process",
+        "pk": 2,
+        "fields": {
+            "process_number": 45678,
+            "process_data": "Teste 2",
+            "customer": 1
+        }
+    }
+]

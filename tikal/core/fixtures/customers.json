@@ -1,0 +1,8 @@
+[{
+    "model": "core.customer",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "webhook_url": "customer/admin"
+    }
+}]
