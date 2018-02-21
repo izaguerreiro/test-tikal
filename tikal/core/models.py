@@ -17,7 +17,7 @@ class Customer(models.Model):
         verbose_name_plural = 'customers'
 
     def __str__(self):
-        return self.user
+        return self.user.username
 
 
 class Process(models.Model):
@@ -34,4 +34,4 @@ class Process(models.Model):
         verbose_name_plural = 'processes'
 
     def __str__(self):
-        return self.process_number
+        return str(self.process_number)
