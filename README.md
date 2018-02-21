@@ -28,8 +28,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 sudo apt-get install rabbitmq-server
 ./manage.py test
-celery 
-celery --app=celerytest worker --beat --loglevel=info
+celery --app=tikal worker --beat --loglevel=info
 ```
 
 * Abra outro terminal
