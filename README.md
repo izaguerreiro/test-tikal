@@ -18,7 +18,7 @@ Para este projeto é necessário a instalação do Redis, para isso utilize o pa
 
 
 ```bash
-git clone git@bitbucket.org:izaguerreiro/test-tikal.git
+git clone https://github.com/izaguerreiro/test-tikal.git
 cd test-tikal
 python -m venv .venv
 source .venv/bin/activate
