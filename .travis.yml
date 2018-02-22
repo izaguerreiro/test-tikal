@@ -6,6 +6,5 @@ install:
 services:
   - redis-server
 script:
-    - cd tikal
     - celery --app=tikal worker --beat --loglevel=info &
     - python manage.py test
