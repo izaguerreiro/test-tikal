@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from core.views import list_process, ProcessView
+from core.views import home, list_process, ProcessView
 
 urlpatterns = [
+    path('', home, name='home'),
     path('admin/', admin.site.urls),
     path('api/process/', ProcessView.as_view(), name='process'),
     path('api/process/<int:pk>/', ProcessView.as_view(), name='process-delete'),

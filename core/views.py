@@ -1,6 +1,6 @@
 """ Views file """
 
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -8,6 +8,9 @@ from rest_framework.views import APIView
 from core.serializer import ProcessSerializer
 from core.models import Customer, Process
 
+
+def home(request):
+    return redirect('/admin/')
 
 def list_process(request, customer):
     """ Lists customer processes """
