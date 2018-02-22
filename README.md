@@ -1,6 +1,8 @@
 # test-tikal
 Desafio realizado para a vaga de Desenvolvedor Python.
 
+[![Build Status](https://travis-ci.org/izaguerreiro/test-tikal.svg?branch=master)](https://travis-ci.org/izaguerreiro/test-tikal)
+
 ### Como executar?
 
 Para este projeto é necessário a instalação do Redis, para isso utilize o passo-a-passo descrito neste [link](https://redis.io/topics/quickstart)
