@@ -4,7 +4,7 @@ from django.core.exceptions import ValidationError
 
 
 def validate_process_number(value):
-    """ Validade process number """
+    """ Validate process number """
     if not value.isdigit():
         raise ValidationError(
             'O número do processo deve conter apenas números', 'digits')
