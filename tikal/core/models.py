@@ -2,6 +2,7 @@
 
 from django.contrib.auth.models import User
 from django.db import models
+from core.validators import validate_process_number
 
 
 class Customer(models.Model):
@@ -22,7 +23,9 @@ class Customer(models.Model):
 
 class Process(models.Model):
     """ Model for processes """
-    process_number = models.IntegerField('número do processo')
+    process_number = models.CharField(
+        'número do processo', max_length=20, validators=[validate_process_number]
+    )
     process_data = models.TextField('dados do processo')
     customer = models.ForeignKey(
         Customer, verbose_name='cliente', on_delete=models.CASCADE
