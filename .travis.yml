@@ -1,0 +1,10 @@
+language: python
+python:
+    - "3.5.2"
+install:
+    - pip install -q -r requirements.txt
+services:
+  - redis-server
+script:
+    - cd tikal
+    - python manage.py test
