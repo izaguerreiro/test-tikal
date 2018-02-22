@@ -11,7 +11,7 @@ class TestProcessViewPost(TestCase):
 
     def setUp(self):
         data = {
-            'process_number': 123456789,
+            'process_number': '12345678901234567890',
 	        'process_data': 'Processo de teste 3',
 	        'customer': 'admin'
         }
